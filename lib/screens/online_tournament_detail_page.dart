@@ -11,7 +11,7 @@ class OnlineTournamentDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tournoi en ligne'),
+        title: Text('Online Tournament'),
         backgroundColor: Colors.black,
       ),
       body: Container(
@@ -28,7 +28,7 @@ class OnlineTournamentDetailPage extends StatelessWidget {
             QrImageView(data: tournamentId, size: 200),
             SizedBox(height: 20),
             Text(
-              'ID du tournoi: $tournamentId',
+              'Tournament ID: $tournamentId',
               style: TextStyle(color: Colors.white, fontSize: 16),
             ),
             SizedBox(height: 20),
@@ -52,7 +52,7 @@ class OnlineTournamentDetailPage extends StatelessWidget {
                         margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         child: ListTile(
                           title: Text(
-                            team['name'] ?? 'Équipe sans nom',
+                            team['name'] ?? 'Unnamed Team',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),

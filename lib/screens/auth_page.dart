@@ -31,7 +31,7 @@ class _AuthPageState extends State<AuthPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  _isLogin ? 'Connexion' : 'Inscription',
+                  _isLogin ? 'Sign In' : 'Sign Up',
                   style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.bold,
@@ -59,7 +59,7 @@ class _AuthPageState extends State<AuthPage> {
                   controller: _passwordController,
                   style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
-                    labelText: 'Mot de passe',
+                    labelText: 'Password',
                     labelStyle: TextStyle(color: Colors.white),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white),
@@ -80,13 +80,13 @@ class _AuthPageState extends State<AuthPage> {
                       backgroundColor: Colors.blueAccent,
                       padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                     ),
-                    child: Text(_isLogin ? 'Se connecter' : 'S\'inscrire'),
+                    child: Text(_isLogin ? 'Sign In' : 'Sign Up'),
                   ),
                 SizedBox(height: 20),
                 TextButton(
                   onPressed: () => setState(() => _isLogin = !_isLogin),
                   child: Text(
-                    _isLogin ? 'Pas de compte ? S\'inscrire' : 'Déjà un compte ? Se connecter',
+                    _isLogin ? 'No account? Sign Up' : 'Already have an account? Sign In',
                     style: TextStyle(color: Colors.blueAccent),
                   ),
                 ),
@@ -122,7 +122,7 @@ class _AuthPageState extends State<AuthPage> {
       );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Erreur: ${e.toString()}')),
+        SnackBar(content: Text('Error: ${e.toString()}')),
       );
     } finally {
       setState(() => _isLoading = false);

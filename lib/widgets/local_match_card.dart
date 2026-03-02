@@ -52,7 +52,7 @@ class _LocalMatchCardState extends State<LocalMatchCard> {
             SizedBox(height: 10),
             ElevatedButton(
               onPressed: _submitScore,
-              child: Text(widget.match.isCompleted ? 'Modifier le score' : 'Enregistrer le score'),
+              child: Text(widget.match.isCompleted ? 'Update Score' : 'Save Score'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: widget.match.isCompleted ? Colors.orange : Colors.green,
               ),

@@ -14,7 +14,7 @@ class _ScanPageState extends State<ScanPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Rejoindre avec QR"), backgroundColor: Colors.black),
+      appBar: AppBar(title: Text("Join with QR"), backgroundColor: Colors.black),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -44,7 +44,7 @@ class _ScanPageState extends State<ScanPage> {
                 controller: teamController,
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
-                  labelText: 'Nom de votre équipe',
+                  labelText: 'Your Team Name',
                   labelStyle: TextStyle(color: Colors.white),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.white),

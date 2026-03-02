@@ -21,7 +21,7 @@ class _CreateOnlineTournamentPageState extends State<CreateOnlineTournamentPage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Créer un tournoi en ligne'),
+        title: Text('Create Online Tournament'),
         backgroundColor: Colors.black,
       ),
       body: Container(
@@ -39,7 +39,7 @@ class _CreateOnlineTournamentPageState extends State<CreateOnlineTournamentPage>
               controller: _nameController,
               style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
-                labelText: 'Nom du tournoi',
+                labelText: 'Tournament Name',
                 labelStyle: TextStyle(color: Colors.white),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.white),
@@ -56,7 +56,7 @@ class _CreateOnlineTournamentPageState extends State<CreateOnlineTournamentPage>
                 backgroundColor: Colors.green,
                 padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
               ),
-              child: Text('Créer le tournoi'),
+              child: Text('Create Tournament'),
             ),
           ],
         ),

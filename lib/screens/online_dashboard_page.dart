@@ -11,7 +11,7 @@ class OnlineDashboardPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tournois en ligne'),
+        title: Text('Online Tournaments'),
         backgroundColor: Colors.black,
         actions: [
           IconButton(
@@ -44,7 +44,7 @@ class OnlineDashboardPage extends StatelessWidget {
                   backgroundColor: Colors.green,
                   minimumSize: Size(double.infinity, 50),
                 ),
-                child: Text('Créer un nouveau tournoi'),
+                child: Text('Create New Tournament'),
               ),
             ),
             Expanded(
@@ -61,7 +61,7 @@ class OnlineDashboardPage extends StatelessWidget {
                   if (tournaments.isEmpty) {
                     return Center(
                       child: Text(
-                        'Aucun tournoi créé',
+                        'No tournaments created',
                         style: TextStyle(color: Colors.white),
                       ),
                     );
@@ -78,7 +78,7 @@ class OnlineDashboardPage extends StatelessWidget {
                         margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         child: ListTile(
                           title: Text(
-                            data['name'] ?? 'Tournoi sans nom',
+                            data['name'] ?? 'Unnamed Tournament',
                             style: TextStyle(color: Colors.white),
                           ),
                           subtitle: Text(

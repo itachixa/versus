@@ -40,9 +40,9 @@ class _LocalTournamentDetailPageState extends State<LocalTournamentDetailPage> {
             children: [
               TabBar(
                 tabs: [
-                  Tab(text: 'Équipes'),
-                  Tab(text: 'Matchs'),
-                  Tab(text: 'Classement'),
+                  Tab(text: 'Teams'),
+                  Tab(text: 'Matches'),
+                  Tab(text: 'Standings'),
                   Tab(text: 'Bracket'),
                 ],
                 labelColor: Colors.white,
@@ -78,7 +78,7 @@ class _LocalTournamentDetailPageState extends State<LocalTournamentDetailPage> {
                   controller: _teamNameController,
                   style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
-                    labelText: 'Nom de l\'équipe',
+                    labelText: 'Team Name',
                     labelStyle: TextStyle(color: Colors.white),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white),
@@ -92,7 +92,7 @@ class _LocalTournamentDetailPageState extends State<LocalTournamentDetailPage> {
               SizedBox(width: 10),
               ElevatedButton(
                 onPressed: _addTeam,
-                child: Text('Ajouter'),
+                child: Text('Add'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.green,
                 ),
@@ -113,7 +113,7 @@ class _LocalTournamentDetailPageState extends State<LocalTournamentDetailPage> {
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
               onPressed: _generateMatches,
-              child: Text('Générer les matchs'),
+              child: Text('Generate Matches'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,
                 minimumSize: Size(double.infinity, 50),

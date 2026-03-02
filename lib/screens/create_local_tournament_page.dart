@@ -24,7 +24,7 @@ class _CreateLocalTournamentPageState extends State<CreateLocalTournamentPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Créer un tournoi local'),
+        title: Text('Create Local Tournament'),
         backgroundColor: Colors.black,
       ),
       body: Container(
@@ -43,7 +43,7 @@ class _CreateLocalTournamentPageState extends State<CreateLocalTournamentPage> {
               controller: _nameController,
               style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
-                labelText: 'Nom du tournoi',
+                labelText: 'Tournament Name',
                 labelStyle: TextStyle(color: Colors.white),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.white),
@@ -54,7 +54,7 @@ class _CreateLocalTournamentPageState extends State<CreateLocalTournamentPage> {
               ),
             ),
             SizedBox(height: 20),
-            Text('Type de match:', style: TextStyle(color: Colors.white, fontSize: 16)),
+            Text('Match Type:', style: TextStyle(color: Colors.white, fontSize: 16)),
             DropdownButton<int>(
               value: _matchType,
               dropdownColor: Colors.grey[800],
@@ -69,7 +69,7 @@ class _CreateLocalTournamentPageState extends State<CreateLocalTournamentPage> {
               onChanged: (value) => setState(() => _matchType = value!),
             ),
             SizedBox(height: 20),
-            Text('Minuteur par match:', style: TextStyle(color: Colors.white, fontSize: 16)),
+            Text('Timer per Match:', style: TextStyle(color: Colors.white, fontSize: 16)),
             DropdownButton<int>(
               value: _timerMinutes,
               dropdownColor: Colors.grey[800],
@@ -89,7 +89,7 @@ class _CreateLocalTournamentPageState extends State<CreateLocalTournamentPage> {
                   padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 ),
                 onPressed: _createTournament,
-                child: Text('Créer le tournoi'),
+                child: Text('Create Tournament'),
               ),
             ),
           ],

@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 50),
                 _buildButton(
                   context,
-                  '🎮 Utiliser en local',
+                  '🎮 Use Locally',
                   () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (_) => LocalDashboardPage()),
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 20),
                 _buildButton(
                   context,
-                  '🌍 Se connecter / Créer un compte',
+                  '🌍 Sign In / Create Account',
                   () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (_) => AuthPage()),
@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 20),
                 _buildButton(
                   context,
-                  '📡 Rejoindre avec QR Code',
+                  '📡 Join with QR Code',
                   () => Navigator.push(
                     context,
                     MaterialPageRoute(builder: (_) => ScanPage()),

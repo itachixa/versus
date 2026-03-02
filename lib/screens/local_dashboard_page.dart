@@ -14,7 +14,7 @@ class LocalDashboardPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tournois Locaux'),
+        title: Text('Local Tournaments'),
         backgroundColor: Colors.black,
       ),
       body: Container(
@@ -33,7 +33,7 @@ class LocalDashboardPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Aucun tournoi local',
+                        'No local tournaments',
                         style: TextStyle(color: Colors.white, fontSize: 24),
                       ),
                       SizedBox(height: 20),
@@ -46,7 +46,7 @@ class LocalDashboardPage extends StatelessWidget {
                           context,
                           MaterialPageRoute(builder: (_) => CreateLocalTournamentPage()),
                         ),
-                        child: Text('Créer un tournoi'),
+                        child: Text('Create Tournament'),
                       ),
                     ],
                   ),
@@ -67,7 +67,7 @@ class LocalDashboardPage extends StatelessWidget {
                           context,
                           MaterialPageRoute(builder: (_) => CreateLocalTournamentPage()),
                         ),
-                        child: Text('Créer un nouveau tournoi'),
+                        child: Text('Create New Tournament'),
                       ),
                     );
                   }
@@ -81,7 +81,7 @@ class LocalDashboardPage extends StatelessWidget {
                         style: TextStyle(color: Colors.white),
                       ),
                       subtitle: Text(
-                        '${tournament.teams.length} équipes • ${tournament.matches.where((m) => m.isCompleted).length}/${tournament.matches.length} matchs',
+                        '${tournament.teams.length} teams • ${tournament.matches.where((m) => m.isCompleted).length}/${tournament.matches.length} matches',
                         style: TextStyle(color: Colors.grey),
                       ),
                       onTap: () => Navigator.push(
