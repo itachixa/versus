@@ -315,50 +315,58 @@ flutter run
 # 📸 Screenshots
 
 ## 🏠 Home Page
-
-![Home Page](assets/images/Home_page.png)
+<p align="center">
+  <img src="assets/images/Home_page.png" width="250">
+</p>
 
 ---
 
 ## 🔐 Sign In
-
-![Sign In](assets/images/Sign_in.png)
+<p align="center">
+  <img src="assets/images/Sign_in.png" width="250">
+</p>
 
 ---
 
 ## 📝 Sign Up
-
-![Sign Up](assets/images/Sign_up.png)
+<p align="center">
+  <img src="assets/images/Sign_up.png" width="250">
+</p>
 
 ---
 
 ## 🏆 Tournament
-
-![Tournament](assets/images/Tournament.png)
+<p align="center">
+  <img src="assets/images/Tournament.png" width="250">
+</p>
 
 ---
 
 ## ⚔️ Matches
-
-![Matches](assets/images/Matches.png)
+<p align="center">
+  <img src="assets/images/Matches.png" width="250">
+</p>
 
 ---
 
 ## 👥 Teams
-
-![Teams](assets/images/Teams.png)
+<p align="center">
+  <img src="assets/images/Teams.png" width="250">
+</p>
 
 ---
 
 ## 📊 Standings
-
-![Standings](assets/images/Standing.png)
+<p align="center">
+  <img src="assets/images/Standing.png" width="250">
+</p>
 
 ---
 
 ## 🧩 Tournament Bracket
-
-![Bracket](assets/images/Bracket.png)
+<p align="center">
+  <img src="assets/images/Bracket.png" width="250">
+</p>
 
 # 🎯 Future Improvements
 
