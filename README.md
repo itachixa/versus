@@ -368,6 +368,39 @@ flutter run
   <img src="assets/images/Bracket.png" width="250">
 </p>
 
+# 📦 Download APK
+
+You can download and test the latest version of the **Versus Tournament App** directly on your Android device.
+
+<p align="center">
+  <a href="apk/Versus.apk">
+    <img src="https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android">
+  </a>
+</p>
+
+### 📲 Installation Instructions
+
+1. Download the APK file from the button above.
+2. Transfer the file to your Android phone if downloaded on a computer.
+3. Open the APK file on your phone.
+4. Allow **"Install from unknown sources"** if prompted.
+5. Install and launch **Versus**.
+
+---
+
+### ⚠️ Requirements
+
+- Android **7.0 or higher**
+- Internet connection for **online tournament features**
+
+---
+
+### 📌 Current Version
+
+| Version | Status |
+|------|------|
+| 1.0.0 | Initial public version |
+
 # 🎯 Future Improvements
 
 Possible improvements for the project:
