@@ -1,8 +1,6 @@
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/local_tournament.dart';
-import '../models/local_team.dart';
-import '../models/local_match.dart';
 
 class LocalStorageService {
   static const String tournamentsKey = 'tournaments';
